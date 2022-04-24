@@ -29,10 +29,10 @@ The purpose of this program is to show how JDK's command line tools can be used 
 10. You should see the heap information for the running `GradleMain` application. It should look similar to this.
 
 
-      garbage-first heap   total 65536K, used 23694K [0x00000007fc000000, 0x0000000800000000)
-      region size 1024K, 17 young (17408K), 3 survivors (3072K)
-      Metaspace       used 7675K, committed 7936K, reserved 1114112K
-      class space    used 1041K, committed 1152K, reserved 1048576K
+              garbage-first heap   total 65536K, used 23694K [0x00000007fc000000, 0x0000000800000000)
+              region size 1024K, 17 young (17408K), 3 survivors (3072K)
+              Metaspace       used 7675K, committed 7936K, reserved 1114112K
+              class space    used 1041K, committed 1152K, reserved 1048576K
 
 11. You may run the `jcmd` command multiple times to see the running heap size. The heap size _may_ change in the first few seconds after the application is up. However, the heap size for the `JavaHeapMain` progam _should_ stabilize after a while (e.g. one minute).
 12. When you're done observing the heap size, terminate the `JavaHeapMain` program by entering CTRL-C in the first shell window.
